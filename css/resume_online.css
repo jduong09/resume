@@ -1,0 +1,136 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, .section-item-header > :nth-child(2) {
+  font-weight: 700;
+}
+
+header {
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: .5rem;
+}
+
+#general-information > ul {
+  display: flex;
+  align-items: center;
+}
+
+#general-information > ul > li {
+  padding-left: 2rem;
+  margin-right: 1rem;
+  background: url('../images/diamond-solid.svg');
+  background-repeat: no-repeat;
+  background-size: .75rem;
+  background-position: 0 center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#general-information > ul > li:first-child {
+  background: none;
+  padding-left: 0;
+}
+
+main {
+  padding: 0 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid black;
+  margin-bottom: .5rem;
+  padding: 0;
+}
+
+.section-list > li {
+  margin-bottom: 1rem;
+}
+
+.section-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.section-item-header > h3, .section-item-header > span {
+  flex: 2 50%;
+}
+
+h3, .section-item-header > :nth-child(2) {
+  margin-bottom: .25rem;
+}
+
+.section-item-header > :nth-child(2n) {
+  text-align: end;
+}
+
+.section-item-header > :nth-child(3), .section-item-header > :nth-child(4) {
+  font-style: italic;
+}
+
+.list-bullet-points {
+  list-style: disc;
+  padding: 0 1rem;
+}
+
+.list-bullet-points > li, #list-publications > li {
+  line-height: 1.25rem;
+  margin-bottom: .25rem;
+}
+
+#list-skills {
+  display: flex;
+  align-items: center;
+}
+
+#list-skills > li {
+  margin-right: 2rem;
+  list-style: circle;
+}
+
+#list-skills > li:first-child {
+  list-style: none;
+}
+
+@media (max-width: 576px) {
+  header {
+    padding: 1.5rem;
+  }
+
+  main {
+    padding: 0 1rem;
+  }
+
+  .list-bullet-points {
+    padding: 0 1.25rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    padding: 3rem;
+  }
+  
+  main {
+    padding: 0 3rem
+  }
+}
