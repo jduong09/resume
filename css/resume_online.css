@@ -100,15 +100,28 @@ h3, .section-item-header > :nth-child(2) {
 #list-skills {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #list-skills > li {
-  margin-right: 2rem;
-  list-style: circle;
+  margin: 0 2rem .75rem 0;
+  position: relative;
 }
 
-#list-skills > li:first-child {
-  list-style: none;
+#list-skills > li::after {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  right: -1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#list-skills > li:last-of-type::after {
+  display: none;
 }
 
 @media (max-width: 576px) {
